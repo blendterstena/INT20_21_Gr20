@@ -5,15 +5,14 @@
     font-family:  'Kumbh Sans', sans-serif;
     
 }
-body{
 
+body{
     background-image: url("images/projekt.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     
-  
+     position: relative;
 }
-
 .navbar{
     background: #131313;
     height: 80px;
@@ -25,6 +24,7 @@ body{
     top: 0;
     z-index: 999;
     opacity: 0.8;
+    
 }
 .navbar__container{
     display: flex;
@@ -81,4 +81,71 @@ height: 100%;
 .navbar__links:hover{
     color:rgb(255, 0, 34);
     transition:all 0.3s ease;
+}
+.box{
+    
+    width:500px;
+}
+.box a{
+    text-decoration: none;
+}
+.photos img{
+
+margin:40px;
+width:500px;
+height: 380px;
+border:2px solid #000;
+border-radius:10px;
+padding: 0;
+}
+.box .tekst{
+color:rgb(245, 240, 240);
+position: relative;
+left:100px;
+top:140px;
+text-decoration: none;
+
+
+
+}
+.xob{
+    width:350;
+    display:flex;
+    flex-direction: row;
+}
+.photsos img {
+    margin:40px;
+padding: 0;
+width:350px;
+height:350px;
+padding:0
+}
+   
+
+.xob .nesto h2{
+    position: relative;
+    left:270px;
+    top:50px;
+    text-decoration: none;
+    color:rgb(187, 178, 178);
+    
+    
+}
+.xob .nesto h3{
+    position: relative;
+    left:80px;
+    top:50px;
+    text-decoration: none;
+    
+}
+.xob .nesto h5{
+width: 500px;
+position: relative;
+top :100px;
+left:80px;
+font-size: 15px;
+line-height: 1.55;
+}
+.hju{
+    text-decoration:none;
 }
