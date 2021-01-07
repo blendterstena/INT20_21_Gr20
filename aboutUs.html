@@ -52,19 +52,8 @@
           pok pok brooklyn roof party.</h6>
         <div class="about-content">
           <div class="about-card">
-            <img src="fotot/hacker.svg">
-            <h3>Who we are?</h3>
-            <p>Suspendisse sit amet orci gravida, lobortis nisi sed, porttitor arcu. Mauris non venenatis augue. Fusce
-              porttitor lectus iaculis nibh sagittis placerat. Integer at mauris vitae justo maximus pulvinar sit amet
-              accumsan est. Fusce varius gravida lectus sit amet congue.
-              Integer at mauris vitae justo maximus pulvinar sit amet
-              accumsan est. Fusce varius gravida lectus sit amet congue
-              Integer at mauris vitae justo maximus pulvinar sit amet
-              accumsan est. Fusce varius gravida lectus sit amet congue</p>
-          </div>
-          <div class="about-card">
             <img src="fotot/identity.svg">
-            <h3>What we do?</h3>
+            <h3>Who we are?</h3>
             <p>Suspendisse sit amet orci gravida, lobortis nisi sed, porttitor arcu. Mauris non venenatis augue. Fusce
               porttitor lectus iaculis nibh sagittis placerat. Integer at mauris vitae justo maximus pulvinar sit amet
               accumsan est. Fusce varius gravida lectus sit amet congue.Integer at mauris vitae justo maximus pulvinar
@@ -72,6 +61,17 @@
               accumsan est. Fusce varius gravida lectus sit amet congueInteger at mauris vitae justo maximus pulvinar
               sit amet
               accumsan est. Fusce varius gravida lectus sit amet congue </p>
+          </div>
+          <div class="about-card">
+            <img src="fotot/hacker.svg">
+            <h3>What we do?</h3>
+            <p>Suspendisse sit amet orci gravida, lobortis nisi sed, porttitor arcu. Mauris non venenatis augue. Fusce
+              porttitor lectus iaculis nibh sagittis placerat. Integer at mauris vitae justo maximus pulvinar sit amet
+              accumsan est. Fusce varius gravida lectus sit amet congue.
+              Integer at mauris vitae justo maximus pulvinar sit amet
+              accumsan est. Fusce varius gravida lectus sit amet congue
+              Integer at mauris vitae justo maximus pulvinar sit amet
+              accumsan est. Fusce varius gravida lectus sit amet congue</p>
           </div>
         </div>
       </div>
@@ -85,30 +85,30 @@
           bespoke pok pok brooklyn roof party.</h6>
         <div class="team-members">
           <div class="team-member">
-            <img src="fotot/BlendTerstena.jpg">
+            <img src="fotot/BlendTerstena.jpg" alt="team member">
             <h6>Blend Terstena</h6>
-            <p>Software Developer</p>
+            <p id="italic">Software Developer</p>
           </div>
           <div class="team-member">
-            <img src="fotot/DonatAliu.jpg">
+            <img src="fotot/DonatAliu.jpg" alt="team member">
             <h6>Donat Aliu</h6>
-            <p>Software Developer</p>
+            <p id="italic">Software Developer</p>
           </div>
           <div class="team-member">
-            <img src="fotot/ElonaPacarizi.jpg">
+            <img src="fotot/ElonaPacarizi.jpg" alt="team member">
             <h6>Elona Pacarizi</h6>
-            <p>Software Developer</p>
+            <p id="italic">Software Developer</p>
           </div>
           <div class="team-member">
-            <img src="fotot/EgzonGashi.jpg">
+            <img src="fotot/EgzonGashi.jpg" alt="team member">
             <h6>Egzon Gashi</h6>
-            <p>Software Developer</p>
+            <p id="italic">Software Developer</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="contact-section overlay">
+  <div class="contact-section">
     <div class="container">
       <div class="about-body">
         <div class="about-title">
@@ -132,10 +132,45 @@
               <input type="text" class="contact-form-text" placeholder="Your name">
               <input type="email" class="contact-form-text" placeholder="Your email">
             </div>
+            <div class="checkbox">
+              <h5>Choose the type of games you're interested in</h5>
+              <div class="options">
+                <input type="checkbox" id="game1" name="game1" value="Action">
+                <label for="game1"> Action</label><br>
+                <input type="checkbox" id="game2" name="game2" value="Adventure">
+                <label for="game2"> Adventure</label><br>
+                <input type="checkbox" id="game3" name="game3" value="Boat">
+                <label for="game3"> Puzzle</label><br>
+                <input type="checkbox" id="game4" name="game4" value="Boat">
+                <label for="game4"> Strategy</label><br>
+              </div>
+            </div>
+            <div class="gender">
+              <h5>Choose gender</h5>
+              <input type="radio" id="male" name="gender" value="male">
+              <label for="male">Male</label><br>
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">Female</label><br>
+            </div>
             <textarea class="contact-form-text" placeholder="Your message"></textarea>
             <input type="submit" class="contact-form-btn" value="Send Message">
           </form>
         </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="location">
+    <div class="container location-container">
+      <div class="find-us">
+        <h1>Find us here!</h1>
+        <img src="fotot/pin.svg"></img>
+      </div>
+      <div class="theMap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11738.371401303846!2d21.1671507!3d42.6487907!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7f0893730efce187!2sFakulteti%20Teknik!5e0!3m2!1sen!2s!4v1610050202478!5m2!1sen!2s"
+          width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe>
       </div>
     </div>
   </div>
