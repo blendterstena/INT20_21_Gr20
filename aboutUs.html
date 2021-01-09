@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GamingKosovo</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="validation.js"></script>
 </head>
 
 <body>
@@ -93,13 +94,23 @@
           <div class="about-card">
             <img src="fotot/hacker.svg">
             <h3>What we do?</h3>
-            <p>Suspendisse sit amet orci gravida, lobortis nisi sed, porttitor arcu. Mauris non venenatis augue. Fusce
-              porttitor lectus iaculis nibh sagittis placerat. Integer at mauris vitae justo maximus pulvinar sit amet
-              accumsan est. Fusce varius gravida lectus sit amet congue.
-              Integer at mauris vitae justo maximus pulvinar sit amet
-              accumsan est. Fusce varius gravida lectus sit amet congue
-              Integer at mauris vitae justo maximus pulvinar sit amet
-              accumsan est. Fusce varius gravida lectus sit amet congue</p>
+            <p>Suspendisse sit amet orci gravida, lobortis nisi sed, porttitor arcu. Mauris non venenatis augue.
+            <ul class="about-list">
+              <li>Software Enginering
+                <ul class="about-sublist">
+                  <li>Mobile Development</li>
+                  <li>Web Developmenet</li>
+                </ul>
+              </li>
+              <li>Design
+                <ul class="about-sublist">
+                  <li>Graphic Design</li>
+                  <li>UI/UX Design</li>
+                </ul>
+              </li>
+            </ul>
+            Integer at mauris vitae justo maximus pulvinar sit amet
+            accumsan est. Fusce varius gravida lectus sit amet congue</p>
           </div>
         </div>
       </div>
@@ -108,7 +119,7 @@
   <div class="team-section">
     <div class="container">
       <div class="team-body">
-        <h1>Meet the gamers!</h1>
+        <h1>Meet our dedicated team!</h1>
         <h6>Hashtag mumblecore offal franzen taxidermy, poutine bitters mixtape plaid cray viral
           bespoke pok pok brooklyn roof party.</h6>
         <div class="team-members">
@@ -155,10 +166,12 @@
                 United States</p>
             </div>
           </div>
-          <form class="contact-form" action="doc.html" method="post">
+          <form id="form" class="contact-form" name="form" action="/" method="post">
             <div class="user-info">
-              <input type="text" class="contact-form-text" placeholder="Your name">
-              <input type="email" class="contact-form-text" placeholder="Your email">
+              <input id="name" name="yourname" type="text" class="contact-form-text" placeholder="Your name">
+              <div id="error-message"></div>
+              <input id="email" name="youremail" type="email" class="contact-form-text" placeholder="Your email">
+              <div id="email-error"></div>
             </div>
             <div class="checkbox">
               <h5>Choose the type of games you're interested in</h5>
@@ -181,7 +194,7 @@
               <label for="female">Female</label><br>
             </div>
             <textarea class="contact-form-text" placeholder="Your message"></textarea>
-            <input type="submit" class="contact-form-btn" value="Send Message">
+            <button type="submit" class="contact-form-btn" onSubmit>Send Message</button>
           </form>
         </div>
       </div>
@@ -227,6 +240,9 @@
     </div>
 
   </section>
+  <script type = "text/javascript">
+
+ </script>
 </body>
 
 </html>
