@@ -49,9 +49,37 @@
         </ul>
     </div>
 </nav>
-<div class="row">
-  <div class="ktogjasht">
-   <a class="class"href="#">
+<div class="canvas">
+  <h1 style="font-family: Copperplate, Papyrus, fantasy; color:#ff1a1a ;">News
+
+  <canvas id="newCanvas" width="70" height="27"></canvas>
+  <!---Krijimi i nje ylli-->
+  <script>
+     var canvas = document.getElementById('newCanvas');
+     var ctx = canvas.getContext('2d');
+     ctx.fillStyle = "red";
+     ctx.beginPath();
+     ctx.moveTo(13.5, 0.0);
+     ctx.lineTo(17.625, 8.75);
+     ctx.lineTo(27.25, 9.7875);
+     ctx.lineTo(20.25, 16.375);
+     ctx.lineTo(21.875, 25.625);
+     ctx.lineTo(13.5, 21.25);
+     ctx.lineTo(5.15, 25.625);
+     ctx.lineTo(6.875, 16.75);
+     ctx.lineTo(0.125, 9.75);
+     ctx.lineTo(7.5, 8.5);
+     ctx.lineTo(13.5, 0);
+     ctx.closePath();
+     ctx.fill();
+     
+  </script>
+</h1>
+  </div>
+  <hr>
+<section class="banner">
+  <div class="banner-main-content">
+    <a class="class"href="#">
       <div class="box">
 
        <div class="tekst">
@@ -62,43 +90,87 @@
         </div>
       </div>
      </a>
-
-     <div class="fotot4">
-       <div class="fotot2">
-      <a class="class"href="#">
-        <div class="ro">
-          <img src="fotot/fifa.webp">
-         </div>
-         <h3>EA Sports sjell herët next-gen upgrade falas të FIFA 21</h3>
-        
-        </a>
+  
+  
      
-      <a class="class"href="#">
-         <div class="ro">
-          <img src="fotot/callof.webp">
-         </div>
-         <h3>Warzone ka arritur 85 milion lojtarë deri më sot</h3>
-      </a>
-    </div>
-    <div class="dyfotottjera">
-      <a class="class"href="#">
-        <div class="po">
-          <img src="fotot/among.webp">
-          
-        </div>
-        <h3>Among Us zbulon statistika interesante rreth lojës</h3>
-      </a>
-    <a href="#">
-     <div class="po">
-       <img src="fotot/fortn.webp">
-     </div>
-     <h3>Epic konfirmon anulimin e Fortnite World Cup 2021</h3>
-    </a>
+ 
+  
+
   </div>
-    </div>   
-   </div>
+  <div class ="banner-sub-content">
+      <div class="hot-topic">
+          <img src="fotot/among.webp"alt="">
+      
+ 
+  <div class ="hot-topic-content">
+      <h2>Among Us zbulon statistika interesante rreth lojës
+      </h2>
+      <h3>
+          Lajm i ri
+      </h3>
+      <p>
+        Ndërsa ky vit i çmendur po përfundon, shërbimet e streaming dhe kompanitë e medias po u ofrojnë fansave statistikat vjetore
+      </p>
+      <a href="#">Read more</a>
+  </div>
+</div>
+
+<div class="hot-topic">
+   <img src="fotot/rocker.webp"alt="">
+
+
+<div class ="hot-topic-content">
+<h2>Season 2 i Rocket League do të sjellë ‘player anthems’ më 9 Dhjetor
+</h2>
+<h3>
+   Lajm i ri
+</h3>
+<p>
+  Numërimi i sezoneve të Rocket League u rivendos pas kalimit të saj në free-to-play. Season 2 është në horizont tani
+</p>
+<a href="#">Read more</a>
+</div>
 
 </div>
+<div class="hot-topic">
+<img src="fotot/fortn2.webp"alt="">
+
+
+<div class ="hot-topic-content">
+<h2>Kur fillon sezoni i 6 i Fornite?
+
+</h2>
+<h3>
+Lajm i ri
+</h3>
+<p>
+  Fortnite Season 6 deri më tani çdo gjë që duhet të dimë për update-in e ardhshëm
+</p>
+<a href="#">Read more</a>
+</div>
+
+</div>
+<div class="hot-topic">
+<img src="fotot/fifa-21.jpg"alt="">
+
+
+<div class ="hot-topic-content">
+<h2>EA Sports sjell herët next-gen upgrade falas të FIFA 21
+</h2>
+<h3>
+Lajm i ri
+</h3>
+<p>
+  EA Sports ka lëshuar në befasi upgrade-in falas të FIFA 21 PlayStation 5 dhe Xbox Series X 
+</p>
+<a href="#">Read more</a>
+</div>
+
+</div>
+</div>
+
+</section>
+
 
 <div class="artikuj">   
  
@@ -186,19 +258,44 @@
             </div>
             </a>
           </div>
+        
+        <div>
+          
         </div>
+      </div>
           <hr />
-          <div class="GamingKosovo">
-            <div class="GamingKosovo1">
-             <a href="#" >
-               
-             </a>
+          
+          
+          <section id="footer">
+            <div class="footer-container">
+            <div class="brand">
+              <h2>GamingKosovo</h2>
             </div>
-          </div>
+            <div class="social-icon">
+              <div class="social-item">
+            <a href="#"><img src="https://img.icons8.com/bubbles/50/000000/facebook-new.png"/></a>
+              </div>
+              <div class="social-item">
+                <a href="#"><img src="https://img.icons8.com/bubbles/50/000000/instagram-new.png"/></a>
+               </div>
+               <div class="social-item">
+               <a href="#"><img src="https://img.icons8.com/bubbles/50/000000/twitter.png"/></a>
+               </div>
+              <div class="social-item">
+              <a href="#"><img src="https://img.icons8.com/bubbles/50/000000/google-plus.png"/></a>
+               </div>
+            </div>
+            <div class="graf">
+              <p>COPYRIGHT © 2019-2020 GamingKosovo  | TË GJITHA TË DREJTAT E REZERVUARA</p>
+            </div>
+            </div>
+            
+            </section>
+            
       
+
+
 </body>
 
 </html> 
-
-
 
