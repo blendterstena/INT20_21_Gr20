@@ -526,12 +526,11 @@ filter:grayscale(0);
 
 .services-container {
   position: relative;
-  margin-top: 60px;
+  padding: 60px 0;
   display: flex;
   width: 100%;
   justify-content: space-between;
   z-index: 3;
-  cursor: pointer;
 }
 
 .services-container h4 {
@@ -550,6 +549,7 @@ filter:grayscale(0);
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .services-card img {
@@ -887,10 +887,11 @@ text.contact-form-text {
   color: #ddd;
 }
 
-/* 
-.find-us {
-  width: 45%;
-} */
+
+.find-us img{
+  margin-top: 30px;
+  width: 100px;
+}
 
 .theMap {
   margin: 40px 0;
@@ -899,6 +900,7 @@ text.contact-form-text {
   overflow: hidden;
   border: 4px solid #640d0f;
 }
+
 
 iframe {
   border-radius: 8px;
