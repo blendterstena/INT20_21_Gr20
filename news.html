@@ -5,22 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GamingKosovo</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
 </head>
 
 <body>
    
   
    
-  <!-- to top -->
 
-  <a href="#" class="to-top">
-    <i class="fas fa-angle-double-up"></i>
-  </a>
   
   <nav class="navbar">
     <div class="navbar__container" >
-      <a href="/" id="navbar__logo"><img src=""><img src="fotot/logo.svg"></a>
+        <a href="/" id="navbar__logo">HOME</a>
         <div class="navbar__toggle" id="mobile-menu">
              
              <span class="bar"></span>
@@ -82,6 +77,9 @@
 </h1>
   </div>
   <hr>
+  
+  <main class="cmain">
+    
 <section class="banner">
   <div class="banner-main-content">
     <a class="class"href="#">
@@ -141,9 +139,8 @@
 <img src="fotot/fortn2.webp"alt="">
 
 
-<div class ="hot-topic-content">
+<div class ="hot-topic-contenti">
 <h2>Kur fillon sezoni i 6 i Fornite?
-
 </h2>
 <h3>
 Lajm i ri
@@ -178,9 +175,74 @@ Lajm i ri
 
 
 <div class="artikuj">   
- 
+  
   <h3>Lajme te ngjashme</h3>
+
+</div>
+
+
+
+<section class="egzoni">
+  <div>
+  <div class="graphics">
+    TOP 4 GRAPHICS
   </div>
+<div class="slider">
+  <div class="slides">
+    <input type="radio" name="radio-btn" id="radio1">
+    <input type="radio" name="radio-btn" id="radio2">
+    <input type="radio" name="radio-btn" id="radio3">
+    <input type="radio" name="radio-btn" id="radio4">
+    <div class="slide first">
+      <img src="fotot/rtx3090.jpg" alt="">
+     
+    </div>
+    <div class="slide">
+      <img src="fotot/1660gtx.jpg" alt="">
+    </div>
+    <div class="slide">
+      <img src="fotot/amd6800.jfif" alt="">
+    </div>
+    <div class="slide">
+      <img src="fotot/rtx4000quadro.jpg" alt="">
+    </div>
+
+    <div class="navigation-auto">
+      <label for="radio1" class="auto-btn1"></label>
+      <label for="radio1" class="auto-btn1"></label>
+      <label for="radio1" class="auto-btn1"></label>
+      <label for="radio1" class="auto-btn1"></label>
+    </div>
+  </div>
+  <div class="navigation-manual">
+    <label for="radio1"class="manual-btn"></label>
+    <label for="radio2"class="manual-btn"></label>
+    <label for="radio3"class="manual-btn"></label>
+    <label for="radio4"class="manual-btn"></label>
+  </div>
+</div>
+</div>
+<script type="text/javascript">
+var nr=1;
+setInterval(function(){
+document.getElementById('radio'+nr).checked=true;
+nr++;
+if(nr>4){
+  nr=1;
+}
+},5000);
+
+</script>
+</section>
+
+
+
+
+
+
+
+
+
 <div class="tonat">
 <div class="hju">
 <a class="class" href="#">
@@ -198,6 +260,15 @@ Lajm i ri
   </a>
 </div>
   <hr />
+
+
+
+
+
+
+
+
+
 
   <div class="hju">
     <a class="class" href="#">
@@ -269,7 +340,7 @@ Lajm i ri
         </div>
       </div>
           <hr />
-          
+        </main>
           
           <section id="footer">
             <div class="footer-container">
@@ -297,10 +368,9 @@ Lajm i ri
             
             </section>
             
-      
+          </main>
+          
 
-            <script src="main.js"></script>
 </body>
 
 </html> 
-
