@@ -1,192 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GamingKosovo</title>
-    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-       
-       .texts h2{
- position: relative;
-    left:100px;
-    top:50px;
-    text-decoration: none;
-    color:#c50017;
-  }
-    .texts h5{
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GamingKosovo</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+  <style>
+    .texts h2 {
+      position: relative;
+      left: 100px;
+      top: 50px;
+      text-decoration: none;
+      color: #c50017;
+    }
+
+    .texts h5 {
       width: 500px;
       position: relative;
-      top :100px;
-      left:80px;
+      top: 100px;
+      left: 80px;
       font-size: 15px;
       line-height: 1.55;
 
     }
-    </style>
+  </style>
 </head>
 
 <body>
-   <!-- to top -->
+  <!-- to top -->
 
   <a href="#" class="to-top">
     <i class="fas fa-angle-double-up"></i>
   </a>
-   <nav class="navbar">
-       <div class="navbar__container">
-           <a href="/" id="navbar__logo">HOME</a>
-           <div class="navbar__toggle" id="mobile-menu">
-                
-                <span class="bar"></span>
-               <span class="bar"></span>
-               <span class="bar"></span>
-           </div>
-           <ul class="navbar__menu">
-               
-            <li class="navbar__item">
-                <a href="/news.html" class="navbar__links">
-             News
-             </a>
-            </li>
-               <li class="navbar__item">
-                   <a href="/ranking.html" class="navbar__links">
-                    Rankings
-                </a>
-               </li>
-               <li class="navbar__item">
-                   <a href="/reviews.html" class="navbar__links">
-                Reviews
-                </a>
-               </li>
-               <li class="navbar__item">
-                   <a href="/aboutUs.html" class="navbar__links">
-                About us
-                </a>
-               </li>
-              
-             
-           </ul>
-       </div>
-   </nav>
-   <div class="canvas">
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="/" id="navbar__logo"><img src="fotot/logo.svg"></a>
+      <div class="navbar__toggle" id="mobile-menu">
+
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+
+        <li class="navbar__item">
+          <a href="/news.html" class="navbar__links">
+            News
+          </a>
+        </li>
+        <li class="navbar__item">
+          <a href="/ranking.html" class="navbar__links">
+            Rankings
+          </a>
+        </li>
+        <li class="navbar__item">
+          <a href="/reviews.html" class="navbar__links">
+            Reviews
+          </a>
+        </li>
+        <li class="navbar__item">
+          <a href="/aboutUs.html" class="navbar__links">
+            About us
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="canvas">
     <h1 style="font-family: Copperplate, Papyrus, fantasy; color:#ff1a1a ;">Reviews
-  
-    <canvas id="newCanvas" width="70" height="27"></canvas>
-    <!---Krijimi i nje ylli-->
-    <script>
-       var canvas = document.getElementById('newCanvas');
-       var ctx = canvas.getContext('2d');
-       ctx.fillStyle = "red";
-       ctx.beginPath();
-       ctx.moveTo(13.5, 0.0);
-       ctx.lineTo(17.625, 8.75);
-       ctx.lineTo(27.25, 9.7875);
-       ctx.lineTo(20.25, 16.375);
-       ctx.lineTo(21.875, 25.625);
-       ctx.lineTo(13.5, 21.25);
-       ctx.lineTo(5.15, 25.625);
-       ctx.lineTo(6.875, 16.75);
-       ctx.lineTo(0.125, 9.75);
-       ctx.lineTo(7.5, 8.5);
-       ctx.lineTo(13.5, 0);
-       ctx.closePath();
-       ctx.fill();
-       
-    </script>
- </h1>
-    </div>
-    <hr style="color: #b11226;">
 
-<div class="position">
-<div class="hju">
-<a class="class" href="#">
-<div class="xob">
-  
-  <div class="foto1">
-    <img src="fotot/WatchDogsLegion-Hero-640x450.jpg">
-    </div>
-     
-      <div class="texts">
-        <h2>Watch Dogs Legion Review</h2>
-      <h5><strong>Watch Dogs Legion sjell historinë e kryeqytetit të Anglisë gjatë një të ardhmeve të errët post-Brexit ku Londra “është pushtuar” nga një ushtri private, korporata të cilat duan të përfitojnë dhe kriminelë të ndryshëm të cilët kanë marrë në dorë kontrollin e qeverisë. Pas disa sulmeve terroriste në Londër, faji i hidhet DedSec që është një organizatë hacker-ash që lufton krimin dhe që e kemi hasur më përpara gjatë Watch Dogs 1 në qytetin e Çikagos dhe Watch Dogs 2 në qytetin e San Françisk…</strong></h5>
-      </div>
+      <canvas id="newCanvas" width="70" height="27"></canvas>
+      <!---Krijimi i nje ylli-->
+      <script>
+        var canvas = document.getElementById('newCanvas');
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle = "red";
+        ctx.beginPath();
+        ctx.moveTo(13.5, 0.0);
+        ctx.lineTo(17.625, 8.75);
+        ctx.lineTo(27.25, 9.7875);
+        ctx.lineTo(20.25, 16.375);
+        ctx.lineTo(21.875, 25.625);
+        ctx.lineTo(13.5, 21.25);
+        ctx.lineTo(5.15, 25.625);
+        ctx.lineTo(6.875, 16.75);
+        ctx.lineTo(0.125, 9.75);
+        ctx.lineTo(7.5, 8.5);
+        ctx.lineTo(13.5, 0);
+        ctx.closePath();
+        ctx.fill();
+
+      </script>
+    </h1>
   </div>
-  </a>
-</div>
-  <hr />
+  <hr style="color: #b11226;">
 
-  <div class="hju">
-    <a class="class" href="#">
-    <div class="xob">
-      
-      <div class="foto1">
-        <img src="fotot/assassins-creed-valhalla.jpg">
-        </div>
-        <div class="texts">
-          <h2>Assasins Creed Valhalla Review</h2>
-          <h5><strong>Janë të rralla lojërat të cilat flasin për vikingët dhe kësaj here Ubisoft sjell Assassin’s Creed Valhalla e cila është loja e parë e kësaj serie që tregon për vikingët dhe jetën e tyre gjatë asaj kohe. Për ne Valhalla është një nga lojërat më të mira nga seria e Assassin’s Creed dhe nëse dëshironi ta zbuloni pse, na ndiqni...</strong></h5>
+  <div class="position">
+    <div class="hju">
+      <a class="class" href="#">
+        <div class="xob">
+
+          <div class="foto1">
+            <img src="fotot/WatchDogsLegion-Hero-640x450.jpg">
           </div>
-      </div>
+
+          <div class="texts">
+            <h2>Watch Dogs Legion Review</h2>
+            <h5><strong>Watch Dogs Legion sjell historinë e kryeqytetit të Anglisë gjatë një të ardhmeve të errët
+                post-Brexit ku Londra “është pushtuar” nga një ushtri private, korporata të cilat duan të përfitojnë dhe
+                kriminelë të ndryshëm të cilët kanë marrë në dorë kontrollin e qeverisë. Pas disa sulmeve terroriste në
+                Londër, faji i hidhet DedSec që është një organizatë hacker-ash që lufton krimin dhe që e kemi hasur më
+                përpara gjatë Watch Dogs 1 në qytetin e Çikagos dhe Watch Dogs 2 në qytetin e San Françisk…</strong>
+            </h5>
+          </div>
+        </div>
       </a>
     </div>
     <hr />
     <div class="hju">
-      <a class="class"href="#">
-      <div class="xob">
-        
-        <div class="foto1">
-          <img src="fotot/fifa-21.jpg">
+      <a class="class" href="#">
+        <div class="xob">
+          <div class="foto1">
+            <img src="fotot/assassins-creed-valhalla.jpg">
+          </div>
+          <div class="texts">
+            <h2>Assasins Creed Valhalla Review</h2>
+            <h5><strong>Janë të rralla lojërat të cilat flasin për vikingët dhe kësaj here Ubisoft sjell
+                Assassin’s Creed Valhalla e cila është loja e parë e kësaj serie që tregon për vikingët dhe
+                jetën e tyre gjatë asaj kohe. Për ne Valhalla është një nga lojërat më të mira nga seria e
+                Assassin’s Creed dhe nëse dëshironi ta zbuloni pse, na ndiqni...</strong></h5>
+          </div>
+        </div>
+      </a>
+    </div>
+    <hr />
+    <div class="hju">
+      <a class="class" href="#">
+        <div class="xob">
+
+          <div class="foto1">
+            <img src="fotot/fifa-21.jpg">
           </div>
           <div class="texts">
             <h2>Fifa 21 Review</h2>
-           
-            <h5><strong>Në botën reale, stadiumet e Premier League nuk kanë tifozë falë pandemisë momentale. Në FIFA 21, të njëjtat stadiume janë të mbushura plot, të mbushura me të njëjtat turma të animuara, të shëmtuara, që janë bërë pjesë e FIFA për më shumë se gjysmë dekade. Ne nuk jemi të sigurt se kush është më keq, veçanërisht kur këta tifozë virtualë kanë krijuar një zakon…</strong></h5>
-            </div>
+
+            <h5><strong>Në botën reale, stadiumet e Premier League nuk kanë tifozë falë pandemisë momentale. Në
+                FIFA 21,
+                të njëjtat stadiume janë të mbushura plot, të mbushura me të njëjtat turma të animuara, të
+                shëmtuara, që
+                janë bërë pjesë e FIFA për më shumë se gjysmë dekade. Ne nuk jemi të sigurt se kush është më keq,
+                veçanërisht kur këta tifozë virtualë kanë krijuar një zakon…</strong></h5>
+          </div>
         </div>
-        </a>
-      </div>
-      <hr /> 
-      <div class="hju">
-        <a class="class"href="#">
+      </a>
+    </div>
+    <hr />
+    <div class="hju">
+      <a class="class" href="#">
         <div class="xob">
-          
+
           <div class="foto1">
             <img src="fotot/hyrule-warriors-age-of-calamity.jpg">
-            </div>
-            <div class="texts">
-              <h2>Hyrule Warriors: Age of Calamity Review</h2>
-           
-              <h5><strong>ENintendo Switch shquhet për shumë lojëra të ndryshme dhe një ndër to është Legend of Zelda: Breath of the Wild. Kjo seri sjellë tashmë një prequel spin-off të quajtur Hyrule Warriors: Age of Calamity. Por a është kjo lojë në nivelin e Legend of Zelda apo është thjesht një…</strong></h5>
-              </div>
           </div>
-          </a>
-        </div>
-        <hr />
-        <div class="hju">
-          <a class="class"href="#">
-          <div class="xob">
-            
-            <div class="foto1">
-              <img src="fotot/immortals-fenyx-rising.jpg">
-              </div>
-              <div class="texts">
-                <h2>Immortals Fenyx Rising Review </h2>
-                
-                <h5><strong>SImmortals Fenyx Rising e quajtur në fillim Gods and Monsters është loja më e fundit open-world nga Ubisoft. Ndoshta për shumë prej jush mund të mos e keni dëgjuar më përpara dhe mund të pyesni veten se çfarë është kjo lojë e re që Ubisoft po sjell. Për të zbuluar më shumë na ndiqni në këtë…</strong></h5>
-                </div>
-            </div>
-            </a>
+          <div class="texts">
+            <h2>Hyrule Warriors: Age of Calamity Review</h2>
+
+            <h5><strong>ENintendo Switch shquhet për shumë lojëra të ndryshme dhe një ndër to është Legend of
+                Zelda: Breath of the Wild. Kjo seri sjellë tashmë një prequel spin-off të quajtur Hyrule Warriors:
+                Age of Calamity. Por a është kjo lojë në nivelin e Legend of Zelda apo është thjesht një…</strong>
+            </h5>
           </div>
         </div>
-          <hr />
-          <div class="GamingKosovo">
-            <div class="GamingKosovo1">
-             <a href="#" >
-        
-             </a>
-            </div>
+      </a>
+    </div>
+    <hr />
+    <div class="hju">
+      <a class="class" href="#">
+        <div class="xob">
+
+          <div class="foto1">
+            <img src="fotot/immortals-fenyx-rising.jpg">
           </div>
-          <script src="main.js"></script>
+          <div class="texts">
+            <h2>Immortals Fenyx Rising Review </h2>
+
+            <h5><strong>SImmortals Fenyx Rising e quajtur në fillim Gods and Monsters është loja më e fundit
+                open-world nga Ubisoft. Ndoshta për shumë prej jush mund të mos e keni dëgjuar më përpara dhe mund
+                të pyesni veten se çfarë është kjo lojë e re që Ubisoft po sjell. Për të zbuluar më shumë na
+                ndiqni në këtë…</strong></h5>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  </a>
+  </div>
+  <hr />
+
+
+  <div class="GamingKosovo">
+    <div class="GamingKosovo1">
+      <a href="#">
+
+      </a>
+    </div>
+  </div>
+  <section id="footer">
+    <div class="footer-container">
+      <div class="brand">
+        <h2>GamingKosovo</h2>
+      </div>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/50/000000/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/50/000000/instagram-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/50/000000/twitter.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/50/000000/google-plus.png" /></a>
+        </div>
+      </div>
+      <div class="graf">
+        <p>COPYRIGHT © 2019-2020 GamingKosovo | TË GJITHA TË DREJTAT E REZERVUARA</p>
+      </div>
+    </div>
+
+  </section>
 </body>
+<script src="main.js"></script>
+</body>
+
 </html>
