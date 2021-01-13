@@ -1200,6 +1200,11 @@ iframe {
   }
 }
 /*Blendi*/
+.bodybg{
+    background: url(images/6.png) center;
+    background-size: cover;
+
+}
 .rankingtable{
   border-collapse: collapse;
   margin-top: 25px;
@@ -1221,6 +1226,7 @@ iframe {
   .rankingtable th,
   .rankingtable td {
   padding:1.08% 1.35% ;
+  color: white;
   }
   .rankingtable tbody tr {
   border-bottom:1px solid #dddddd ;
@@ -1235,7 +1241,7 @@ iframe {
   border-bottom: 2px solid #ffffff;
   }
   .cmain1{
-  background-color: #000000a2;
+  background-color: #00000098;
   margin-left: 9.15%;
   margin-right: 9.15%;
   padding-top: 50px;
