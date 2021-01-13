@@ -132,6 +132,42 @@ body {
 hr {
   border: 1px solid #c50017;
 }
+.iframe-container{
+
+  margin-left: 500px;
+  width:608px;
+  height:342px;
+}
+
+.review p{
+  color: #c50017;
+  margin: 40px 25px;
+  display: flex;
+  align-items: center;
+  word-spacing: 2px;
+  font-weight: 400;
+  padding: 0;
+}
+.lista{
+  color:white;
+  margin: 10px 25px;
+  font-weight: 400;
+  padding:5px;
+ 
+}
+
+.review h1{
+  text-align: center;
+}
+.review img{
+  margin-top: 3%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+ 
+  
+}
 /* Egzoni*/
 
 *{
