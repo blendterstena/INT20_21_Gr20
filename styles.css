@@ -4,6 +4,7 @@
   padding: 0;
   font-family: "Kumbh Sans", sans-serif;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -12,7 +13,7 @@ body {
   background-repeat: no-repeat;
   font-family: Copperplate, Papyrus, fantasy;
   position: relative;
-  background-color: #000;
+  background-color: rgb(0, 0, 0);
 }
 .navbar {
   background: #010018;
@@ -453,7 +454,7 @@ text.contact-form-text {
 }
 
 #footer {
-  background-image: linear-gradient(to left, #111213, rgb(44, 52, 61), #515151);
+  background-image: linear-gradient(31deg,to left, #111213, rgb(44, 52, 61), #515151);
   height: 250px;
   width: 100%;
   padding-top: 30px;
@@ -633,6 +634,27 @@ text.contact-form-text {
   text-align: center;
 }
 
+.hide{
+  display:none;
+  border-style: solid;
+}
+.flej{
+  padding:0;
+  margin:10px;
+  
+  text-align: center;
+
+}
+.buton{
+  padding:10px;
+  font-weight: bold;
+  background-color: #eee;
+  color:#000;
+  
+}
+#image{
+  width: 400px;
+}
 /*Elona */
 .container {
   max-width: 1200px;
