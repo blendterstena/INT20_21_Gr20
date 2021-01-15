@@ -170,6 +170,25 @@ hr {
   width: 50%;
 }
 
+/* dark mode*/
+.dark-mode-toggle {
+  position: absolute;
+  z-index: 100;
+  top: 6em;
+  right: 0.5em;
+  color: var(--foreground);
+  border: 2px solid currentColor;
+  padding: 4px;
+  background: #1d1961;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+}
+.darkmode {
+  background-color: #000;
+}
+
 /* Egzoni*/
 
 * {
