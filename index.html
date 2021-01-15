@@ -131,7 +131,8 @@
   let currentTime = new Date().getHours();
   const bg = document.getElementById('hero')
   {
-    if (currentTime >= 18 || currentTime <= 24) {
+    //eshte ndryshu ose ne dhe
+    if (currentTime >= 18 && currentTime <= 24) {
       bg.style.background = "url('./fotot/bg-day.jpg') no-repeat center center"
       bg.style.backgroundSize = "cover"
     }

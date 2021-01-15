@@ -28,6 +28,10 @@ body {
 }
 /* Donati*/
 /*to top*/
+
+.bgDonati{
+  background-color:black;
+}
 .to-top {
   background: white;
   position: fixed;
@@ -697,6 +701,7 @@ text.contact-form-text {
 .shnosh{
   margin-left:50px;
   margin-top:50px;
+  
 }
 .shnosh {
   display: flex;
@@ -704,6 +709,7 @@ text.contact-form-text {
 .shnosh-tekst{
 margin-left:90px;
 margin-top:120px
+
 
 }
 
