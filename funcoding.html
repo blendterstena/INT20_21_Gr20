@@ -10,6 +10,10 @@
   <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
   <script src="jquery.js"></script>
   <script src="jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.10.2/Sortable.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -87,28 +91,41 @@
     </div>
     <hr>
    
-<section class="flej">
-<img id="image" src="fotot/kosova.webp">
 
-<div>
-  <button onclick="show_hide()" class="buton">Show and Hide</button>
+<section class="shnosh">
+<div class="drag-drop">
+  <div class="d-d">
+    <span class="text">News</span>
+    <i class="fas fa-bars"></i>
+  </div>
+  <div class="d-d">
+    <span class="text">AboutUs</span>
+    <i class="fas fa-bars"></i>
+  </div>
+  <div class="d-d">
+    <span class="text">Ranking</span>
+    <i class="fas fa-bars"></i>
+  </div>
+  <div class="d-d">
+    <span class="text">Reviews</span>
+    <i class="fas fa-bars"></i>
+  </div>
+  <div class="d-d">
+    <span class="text">FunCoding</span>
+    <i class="fas fa-bars"></i>
+  </div>
+</div>
+<div class="shnosh-tekst">
+  <h1>Rate your favourite using drag and drop</h1>
 </div>
 </section>
+
 <script>
-  var a;
-  function show_hide(){
-if(a==1){
-  document.getElementById("image").style.display="inline";
-  return a=0;
-}
-else{
-  document.getElementById("image").style.display="none";
-  return a=1;
-}
-
-  }
+  const dragArea = document.querySelector(".drag-drop");
+  new Sortable(dragArea, {
+    animation: 350
+  });
 </script>
-
 
 </body>
 </html>
