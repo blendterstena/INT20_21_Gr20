@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles.css">
   <script src="validation.js"></script>
   <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
-  
+
 </head>
 
 <body>
@@ -55,36 +55,37 @@
         </li>
       </ul>
     </div>
-  </nav><div class="bgDonati">
-  <div class="canvas">
-    <h1 style="font-family: Copperplate, Papyrus, fantasy; color:#ff1a1a ;">About us
+  </nav>
+  <div class="bgDonati">
+    <div class="canvas">
+      <h1 style="font-family: Copperplate, Papyrus, fantasy; color:#ff1a1a ;">About us
 
-      <canvas id="newCanvas" width="70" height="27"></canvas>
-      <!---Krijimi i nje ylli-->
-      <script>
-        var canvas = document.getElementById('newCanvas');
-        var ctx = canvas.getContext('2d');
-        ctx.fillStyle = "red";
-        ctx.beginPath();
-        ctx.moveTo(13.5, 0.0);
-        ctx.lineTo(17.625, 8.75);
-        ctx.lineTo(27.25, 9.7875);
-        ctx.lineTo(20.25, 16.375);
-        ctx.lineTo(21.875, 25.625);
-        ctx.lineTo(13.5, 21.25);
-        ctx.lineTo(5.15, 25.625);
-        ctx.lineTo(6.875, 16.75);
-        ctx.lineTo(0.125, 9.75);
-        ctx.lineTo(7.5, 8.5);
-        ctx.lineTo(13.5, 0);
-        ctx.closePath();
-        ctx.fill();
+        <canvas id="newCanvas" width="70" height="27"></canvas>
+        <!---Krijimi i nje ylli-->
+        <script>
+          var canvas = document.getElementById('newCanvas');
+          var ctx = canvas.getContext('2d');
+          ctx.fillStyle = "red";
+          ctx.beginPath();
+          ctx.moveTo(13.5, 0.0);
+          ctx.lineTo(17.625, 8.75);
+          ctx.lineTo(27.25, 9.7875);
+          ctx.lineTo(20.25, 16.375);
+          ctx.lineTo(21.875, 25.625);
+          ctx.lineTo(13.5, 21.25);
+          ctx.lineTo(5.15, 25.625);
+          ctx.lineTo(6.875, 16.75);
+          ctx.lineTo(0.125, 9.75);
+          ctx.lineTo(7.5, 8.5);
+          ctx.lineTo(13.5, 0);
+          ctx.closePath();
+          ctx.fill();
 
-      </script>
-    </h1>
+        </script>
+      </h1>
+    </div>
+    <hr>
   </div>
-  <hr>
-</div>
   <div class="about-us">
     <div class="container">
       <div class="about-body">
@@ -178,11 +179,12 @@
                 United States</p>
             </div>
           </div>
-          <form id="form" class="contact-form" name="form" action="/" method="post">
+          <form id="form" class="contact-form" name="form" action="/" method="post" autocomplete="on">
             <div class="user-info">
               <input id="name" name="yourname" type="text" class="contact-form-text" placeholder="Your name">
               <div id="error-message"></div>
-              <input id="email" name="youremail" type="email" class="contact-form-text" placeholder="Your email">
+              <input id="email" name="youremail" type="email" class="contact-form-text"
+                pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address" placeholder="Your email">
               <div id="email-error"></div>
             </div>
             <div class="checkbox">
@@ -218,6 +220,11 @@
       <div class="find-us">
         <h1>Find us here!</h1>
         <img src="fotot/pin.svg"></img>
+        <h3>Your location is: </h3>
+        <p id="latitude"></p>
+        <p id="longitude"></p>
+        <p id="denied"></p>
+        <div id="mapholder"></div>
       </div>
       <div class="theMap">
         <iframe
@@ -253,6 +260,32 @@
   </section>
   <script type="text/javascript"></script>
   <script src="main.js"></script>
+  <script>
+    if ('geolocation' in navigator) {
+
+      let latitude = document.getElementById("latitude")
+      let longitude = document.getElementById("longitude")
+      let denied = document.getElementById("denied")
+
+      navigator.geolocation.getCurrentPosition(position => {
+        latitude.innerHTML = "Latitude: " + position.coords.latitude
+        longitude.innerHTML = "Longitude: " + position.coords.longitude
+
+
+        let latlon = position.coords.latitude + "," + position.coords.longitude;
+        console.log(latlon, "LATLON")
+        let img_url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latlon + "&zoom=14&size=400x400&key=YOUR_API_KEY"
+
+        document.getElementById("mapholder").innerHTML = "<img src='" + img_url + "'>";
+      })
+    }
+    else {
+      denied.innerHTML = "User denied the request for Geolocation."
+    }
+
+
+
+  </script>
 </body>
 
 </html>

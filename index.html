@@ -62,7 +62,8 @@
         <div class="hero-text">
           <h1>Be the first to find out!</h1>
           <h4> We cover everything from PlayStation and Xbox blockbusters, to quirky Nintendo games, to the cool indie
-            gems on PC and Android that you might otherwise miss.</h4>
+            gems on PC and Android that you might otherwise miss. Send us an <a
+              href="mailto:elonepacarizi@gmail.com">e-mail</a>!</h4>
         </div>
       </div>
       <div class="services">
@@ -109,25 +110,35 @@
         </div>
       </div>
       <div class="graf">
+        <div id="grupi">Ky projekt u punua nga:
+
+        </div>
         <p>COPYRIGHT © 2019-2020 GamingKosovo | TË GJITHA TË DREJTAT E REZERVUARA</p>
       </div>
     </div>
 
   </section>
   <script>
-    if ('geolocation' in navigator) {
-      console.log('Geolocation available')
-      navigator.geolocation.getCurrentPosition(position => {
-        console.log(position)
-      })
+    //nje array me emrat e anetareve te grupit
+    let grupi = ['Elona', 'Egzoni', 'Donati', 'Blendi'];
+
+    //funksioni per sortim sipas alfabetit
+    function sort(a, b) {
+      { return b - a }
     }
-    else {
-      console.log('Geolocation not available')
+
+    let emri = document.getElementById("grupi");
+    let grupiSorted = grupi.sort();
+    console.log(grupiSorted)
+    for (i = 0; i < grupiSorted.length; i++) {
+      emri.innerHTML += "<p>" + grupiSorted[i] + "</p>";
     }
+
 
   </script>
 </body>
 <script type="text/javascript">
+  // ne variablen currentTime, e marrim oren me  funksionin e gatshem getHours()
   let currentTime = new Date().getHours();
   const bg = document.getElementById('hero')
   {
