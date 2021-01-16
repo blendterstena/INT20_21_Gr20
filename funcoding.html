@@ -148,7 +148,7 @@
     margin-top: 120px;
     color:#304B5F;
   }
-  .qmen{
+  .move-it{
   margin-left:45px;
   margin-top:16px;
   
@@ -160,7 +160,7 @@
 
  
 </style>
-<section class="qmen">
+<section class="move-it">
   <button id="left">&laquo;</button>
   <button id="right">&raquo;</button>
   <div class="iz"><h2>Move it</h2></div>
@@ -188,9 +188,9 @@
     </audio>
   <h3 style="color: black;" #ff1a1a;">Rate Us</p>
   
-    <button onclick="s.play()()" type="button">Good</button>
-  <button onclick="y.play()()" type="button">Average</button>
-  <button onclick="z.play()()" type="button">Bad</button>
+    <button onclick="s.play()" type="button">Good</button>
+  <button onclick="y.play()" type="button">Average</button>
+  <button onclick="z.play()" type="button">Bad</button>
   
   
   <script>
@@ -201,17 +201,6 @@
   
   var s = document.getElementById("good"); 
   
-  function playAudio() { 
-    x.play(); 
-    
-  } 
-  function playAudio1() { 
-     y.play(); 
-     
-  } 
-  function playAudio2() { 
-     z.play();  
-  } 
   
   
   </script>
@@ -243,15 +232,15 @@ function stopWorker() {
 </script>
 </body>
 <script>
-  var x=0;
+  
  $( "#right" ).click(function() {
 $( ".iz" ).animate({ "left": "+=100px" }, "slow" );
-x++;
+
 
 });
  
 $( "#left" ).click(function(){
-$( ".iz" ).animate({ "left": "-=50px" }, "fast" );
+$( ".iz" ).animate({ "left": "-=50px" }, "slow" );
 
 
 
@@ -266,10 +255,11 @@ $( "#right" ).click(function(){
  
  $("h2").hide(5000,AlertFunction);
  
-function AlertFunction(){
- 
-}
+
 });
+function AlertFunction(){
+ console.log("Moved");
+}
 
 
  </script>
