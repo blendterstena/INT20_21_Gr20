@@ -92,7 +92,56 @@
   </h1>
     </div>
     <hr>
-   
+   <div class="clock">
+      <div class="display">
+</div>
+</div>
+<script>
+  setInterval(function(){
+    const clock = document.querySelector(".display");
+    let koha = new Date();
+    let sek = koha.getSeconds();
+    let min = koha.getMinutes();
+    let hours= koha.getHours();
+    let dita = 'AM';
+    if(hours > 12){
+      dita = 'PM';
+      hours = hours - 12;
+    }
+    if(hours == 0){
+      hours = 12;
+    }
+    if(sek < 10){
+      sek = '0' + sek;
+    }
+    if(min < 10){
+      min = '0' + min;
+    }
+    if(hours < 10){
+      hours = '0' + hours;
+    }
+    clock.textContent = hours + ':' + min + ':' + sek + " " + dita;
+  });
+</script>
+
+    <style>
+    .clock{
+      background: #282a35;
+      height: 90px;
+      
+      line-height: 90px;
+      text-align: center;
+      padding: 0 20px;
+      
+    }
+    .clock .display{
+      font-size: 60px;
+      color: #00ffff;
+      letter-spacing: 6px;
+      
+    }
+    
+  </style>
 
 <section class="drd">
 <div class="drag-drop">
@@ -264,7 +313,6 @@ function AlertFunction(){
 
  </script>
 </html>
-
 
 
 
