@@ -5,15 +5,15 @@ window.onload = function () {
 
   form.addEventListener('submit', (e) => {
     e.preventDefault()
-    if (yourname.value === "") {
+    if (yourname.value == "") {
       yourname.style.background = '#640d0f';
       document.getElementById('error-message').innerHTML = "Please enter your name!";
-    } else {
+    }else {
       yourname.style.background = 'transparent';
       document.getElementById('error-message').innerHTML = "";
     }
 
-    if (youremail.value === "") {
+    if (youremail.value == "") {
       youremail.style.background = '#640d0f'
       document.getElementById('email-error').innerHTML = "Please enter your email!";
     } else if (!validateEmail(youremail)) {
