@@ -496,7 +496,7 @@ text.contact-form-text {
 
 #footer {
   background-image: linear-gradient(to left, #27292c, rgb(30, 38, 48), #3a2828);
-  height: 450px;
+  height: auto;
   width: 100%;
   padding-top: 30px;
   color: rgb(173, 148, 148);
@@ -861,8 +861,8 @@ text.contact-form-text {
 }
 
 .about-us h1,
-h3,
-p {
+.about-us h3,
+.about-us p {
   color: #ddd;
   margin-top: 20px;
 }
@@ -1181,6 +1181,12 @@ text.contact-form-text {
   width: 100px;
 }
 
+.find-us h3,
+.find-us p {
+  margin-top: 5px;
+  color: #ddd;
+}
+
 .theMap {
   margin: 40px 0;
   border-radius: 10px;
@@ -1200,9 +1206,16 @@ iframe {
   font-size: 18px;
 }
 
-#grupi p {
+.graf {
+  padding-bottom: 40px;
+}
+
+#grupi p,
+.graf p {
   font-weight: 400;
   font-size: 16px;
+  color: #ddd;
+  margin-top: 5px;
 }
 
 @media screen and (max-width: 1023px) {

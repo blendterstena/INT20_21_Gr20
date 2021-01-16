@@ -182,7 +182,7 @@
           <form id="form" class="contact-form" name="form" action="google.com" autocomplete="on" method="post">
             <div class="user-info">
               <input id="name" name="yourname" type="text" class="contact-form-text" placeholder="Your name"
-                pattern="^[a-z A-Z]+$" required>
+                pattern="^[a-z A-Z]+$">
               <div id="error-message"></div>
               <input id="email" name="youremail" type="email" class="contact-form-text"
                 pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address" placeholder="Your email">
@@ -208,7 +208,7 @@
               <input type="radio" id="female" name="gender" value="female">
               <label for="female">Female</label><br>
             </div>
-            <textarea class="contact-form-text" placeholder="Your message"></textarea>
+            <textarea class="contact-form-text" placeholder="Your message" required></textarea>
             <button type="submit" class="contact-form-btn" onSubmit>Send Message</button>
           </form>
         </div>
@@ -283,8 +283,6 @@
     else {
       denied.innerHTML = "User denied the request for Geolocation."
     }
-
-
 
   </script>
 </body>
