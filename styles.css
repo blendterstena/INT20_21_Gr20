@@ -189,26 +189,24 @@ hr {
   background-color: #000;
 }
 
-.audio{
- margin-top:270px;
- margin-left:50px ;
+.audio {
+  margin-top: 270px;
+  margin-left: 50px;
 }
-.audio button{
-
-    background-color:rgb(233, 195, 195);
-    border: none;
-    color: #1d1961;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 50px;
-  }
+.audio button {
+  background-color: rgb(233, 195, 195);
+  border: none;
+  color: #1d1961;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+}
 /* Egzoni*/
-
 
 * {
   box-sizing: border-box;
@@ -677,36 +675,34 @@ text.contact-form-text {
   text-align: center;
 }
 
-.hide{
-  display:none;
+.hide {
+  display: none;
   border-style: solid;
 }
-.flej{
-  padding:0;
-  margin:10px;
-  
-  text-align: center;
+.flej {
+  padding: 0;
+  margin: 10px;
 
+  text-align: center;
 }
-.buton{
-  padding:10px;
+.buton {
+  padding: 10px;
   font-weight: bold;
   background-color: #eee;
-  color:#000;
-  
+  color: #000;
 }
-#image{
+#image {
   width: 400px;
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-.drag-drop{
+.drag-drop {
   background: rgb(180, 169, 169);
   padding: 25px;
   max-width: 460px;
@@ -714,7 +710,7 @@ text.contact-form-text {
   border-radius: 3px;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
 }
-.drag-drop .d-d{
+.drag-drop .d-d {
   border-radius: 2.5px;
   align-items: center;
   justify-content: space-between;
@@ -722,35 +718,32 @@ text.contact-form-text {
   color: #fff;
   display: flex;
   padding: 12px 17px;
-  background: #304B5F;
+  background: #304b5f;
 }
-.drag-drop .d-d:last-child{
+.drag-drop .d-d:last-child {
   margin-bottom: 0px;
 }
-.drag-drop .d-d .text{
+.drag-drop .d-d .text {
   font-size: 18px;
   font-weight: 400;
 }
-.drag-drop .d-d i{
+.drag-drop .d-d i {
   cursor: pointer;
 
   font-size: 18px;
-} 
-.shnosh{
-  margin-left:50px;
-  margin-top:50px;
-  
+}
+.shnosh {
+  margin-left: 50px;
+  margin-top: 50px;
 }
 .shnosh {
   display: flex;
-  margin-top:330px;
+  margin-top: 330px;
 }
-.shnosh-tekst{
-margin-left:90px;
-margin-top:120px
+.shnosh-tekst {
+  margin-left: 90px;
+  margin-top: 120px;
 }
-
-
 
 /*Elona */
 .container {
@@ -1421,15 +1414,15 @@ div .box1 {
 .box1 .butoni li a:hover {
   background: #ff7300;
 }
-.resizec{
+.resizec {
   margin-left: 5px;
   border: 1px solid;
-  padding: 20px; 
+  padding: 20px;
   width: 98%;
   resize: both;
-  overflow: auto; 
+  overflow: auto;
 }
-.shtyllatd{
+.shtyllatd {
   column-count: 2;
   column-gap: 40px;
 }

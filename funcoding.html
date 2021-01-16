@@ -216,6 +216,31 @@
   
   </script>
   </div>
+  <p style="margin-left: 150px; color: black;">Count numbers: <output id="result"></output></p>
+<button onclick="startWorker()" style="margin-left: 125px;">Start Worker</button>
+<button onclick="stopWorker()" style="margin-bottom: 50px;">Stop Worker</button>
+
+<script>
+var w;
+
+function startWorker() {
+  if (typeof(Worker) !== "undefined") {
+    if (typeof(w) == "undefined") {
+      w = new Worker("animation.js");
+    }
+    w.onmessage = function(event) {
+      document.getElementById("result").innerHTML = event.data;
+    };
+  } else {
+    document.getElementById("result").innerHTML = "Sorry! No Web Worker support.";
+  }
+}
+
+function stopWorker() {
+  w.terminate();
+  w = undefined;
+}
+</script>
 </body>
 <script>
   var x=0;
