@@ -1,22 +1,22 @@
-let bubble1;
-let bubble2;
+let circle1;
+let circle2;
 
 function setup() {
   let c=createCanvas(460, 250);
-  bubble1 = new Bubble();
-  bubble2 = new Bubble();
+  circle1 = new circle();
+  circle2 = new circle();
   c.position(50, 200);
 }
 
 function draw() {
   background(180, 169, 169);;
-  bubble1.move();
-  bubble1.show();
-  bubble2.move();
-  bubble2.show();
+  circle1.move();
+  circle1.show();
+  circle2.move();
+  circle2.show();
 }
 
-class Bubble {
+class circle {
   constructor(x, y, r) {
     this.x = 200;
     this.y = 150;
