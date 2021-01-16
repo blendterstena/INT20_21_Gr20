@@ -5,7 +5,7 @@ function setup() {
   let c=createCanvas(460, 250);
   circle1 = new circle();
   circle2 = new circle();
-  c.position(50, 200);
+  c.position(50, 280);
 }
 
 function draw() {
