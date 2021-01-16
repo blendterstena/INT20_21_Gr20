@@ -28,7 +28,19 @@ body {
 }
 /* Donati*/
 /*to top*/
-
+.Fun button{
+  background-color: rgb(233, 195, 195);
+  border: none;
+  color: #1d1961;
+ 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+}
 .bgn {
   background-color: black;
 }

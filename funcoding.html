@@ -209,13 +209,14 @@
 
  
 </style>
+<div class="Fun">
 <section class="move-it">
   <button id="left">&laquo;</button>
   <button id="right">&raquo;</button>
   <div class="iz"><h2>Move it</h2></div>
   
 </section>
-
+</div>
 
 <div class="audio">
   
@@ -238,7 +239,7 @@
   <h3 style="color: black;" #ff1a1a;">Rate Us</p>
   
     <button onclick="s.play()" type="button">Good</button>
-  <button onclick="y.play()" type="button">Average</button>
+  <button onclick="c.play()" type="button">Average</button>
   <button onclick="z.play()" type="button">Bad</button>
   
   
@@ -246,7 +247,7 @@
     
   var z = document.getElementById("errori"); 
   
-  var y = document.getElementById("meh"); 
+  var c = document.getElementById("meh"); 
   
   var s = document.getElementById("good"); 
   
@@ -254,9 +255,12 @@
   
   </script>
   </div>
-  <p style="margin-left: 150px; color: black;">Count numbers: <output id="result"></output></p>
-<button onclick="startWorker()" style="margin-left: 125px;">Start Worker</button>
-<button onclick="stopWorker()" style="margin-bottom: 50px;">Stop Worker</button>
+
+  <h3 style="margin-left: 150px; color: black;">Count numbers: <output id="result"></output></h3>
+<button onclick="startWorker()" style="margin-left: 125px;border-radius: 50px; background-color: rgb(233, 195, 195);
+border: none;padding: 20px;">Start Worker</button>
+<button onclick="stopWorker()" style="margin-bottom: 50px;border-radius: 50px; background-color: rgb(233, 195, 195);
+border: none;padding: 20px;"">Stop Worker</button>
 
 <script>
 var w;
@@ -312,6 +316,23 @@ function AlertFunction(){
 
 
  </script>
+ <script>
+  var x=6;
+  var y=0;
+  
+try {
+     console.log(t+y);
+     console.log(x);
+}
+catch(error) {
+    console.log('An error caught'); 
+    console.log('Error message: ' + error);  
+}
+finally {
+     console.log('This was a try and catch example');
+} 
+</script>
+ 
 </html>
 
 
