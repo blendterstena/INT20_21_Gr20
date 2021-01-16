@@ -1297,6 +1297,8 @@ iframe {
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   border-spacing: 0;
+  outline: 1px solid white;
+  outline-offset: 0px;
 }
 .rankingtable thead tr {
   background-color: #254083;
@@ -1309,6 +1311,7 @@ iframe {
   padding: 1.08% 1.35%;
   color: white;
   font-family: "Arapey";
+  font-size: 19px;
 }
 .rankingtable tbody tr {
   border-bottom: 1px solid #dddddd;
@@ -1417,4 +1420,16 @@ div .box1 {
 }
 .box1 .butoni li a:hover {
   background: #ff7300;
+}
+.resizec{
+  margin-left: 5px;
+  border: 1px solid;
+  padding: 20px; 
+  width: 98%;
+  resize: both;
+  overflow: auto; 
+}
+.shtyllatd{
+  column-count: 2;
+  column-gap: 40px;
 }
