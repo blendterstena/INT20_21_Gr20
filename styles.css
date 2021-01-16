@@ -139,8 +139,10 @@ hr {
 }
 .iframe-container {
   margin-left: 500px;
+  
   width: 608px;
   height: 342px;
+  padding: 0;
 }
 
 .review p {
