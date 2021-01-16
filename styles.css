@@ -189,6 +189,24 @@ hr {
   background-color: #000;
 }
 
+.audio{
+ margin-top:270px;
+ margin-left:50px ;
+}
+.audio button{
+
+    background-color:rgb(233, 195, 195);
+    border: none;
+    color: #1d1961;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+  }
 /* Egzoni*/
 
 
