@@ -5,7 +5,7 @@ function setup() {
   let c=createCanvas(460, 250);
   bubble1 = new Bubble();
   bubble2 = new Bubble();
-  c.position(50, 500);
+  c.position(50, 200);
 }
 
 function draw() {
@@ -34,3 +34,4 @@ class Bubble {
     ellipse(this.x, this.y, 24, 24);
   }
 }
+
