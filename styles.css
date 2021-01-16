@@ -29,7 +29,7 @@ body {
 /* Donati*/
 /*to top*/
 
-.bgDonati {
+.bgn {
   background-color: black;
 }
 .to-top {
@@ -458,11 +458,7 @@ text.contact-form-text {
   background: #200202;
 }
 
-.row .ktogjasht {
-  display: flex;
-  flex-direction: row;
-  margin-left: 70px;
-}
+
 
 .nesto {
   color: rgb(49, 34, 34);
@@ -485,7 +481,7 @@ text.contact-form-text {
 .hju.xob {
   padding: 150px;
 }
-.tonat {
+.Nmain {
   padding: 0 200px 0 200px;
   margin-bottom: 10%;
   margin-top: 10%;
@@ -550,29 +546,10 @@ text.contact-form-text {
 #footer .social-item:hover img {
   filter: grayscale(0);
 }
-.pjest img {
-  width: 4%;
-  margin-left: 5%;
-}
-.pjest {
-  margin-left: 14%;
-}
-.aha img {
-  width: 4%;
-  margin-left: 5%;
-}
-.aha {
-  margin-left: 14%;
-}
-.aha p {
-  width: 15%;
-  color: #000;
-}
-.pjest p {
-  width: 15%;
-  color: #000;
-}
-.egzoni {
+
+
+
+.grafiku {
   margin: 0;
   padding: 0;
   height: 40vw;
@@ -681,12 +658,7 @@ text.contact-form-text {
   display: none;
   border-style: solid;
 }
-.flej {
-  padding: 0;
-  margin: 10px;
 
-  text-align: center;
-}
 .buton {
   padding: 10px;
   font-weight: bold;
@@ -734,15 +706,15 @@ text.contact-form-text {
 
   font-size: 18px;
 }
-.shnosh {
+.drd {
   margin-left: 50px;
   margin-top: 50px;
 }
-.shnosh {
+.drd {
   display: flex;
   margin-top: 330px;
 }
-.shnosh-tekst {
+.drd-tekst {
   margin-left: 90px;
   margin-top: 120px;
 }
