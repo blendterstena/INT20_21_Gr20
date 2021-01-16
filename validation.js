@@ -41,20 +41,6 @@ function validateEmail(yourmail) {
 }
 
 
-//   if (youremail.value == "") {
-//     youremail.style.background = 'Red';
-//     document.getElementById('email-error').innerHTML = "Please enter an email address.";
-//   } else if (!emailFilter.test(temail)) { //test email for illegal characters
-//     document.getElementById('email-error').innerHTML = "Please enter a valid email address.";
-//   } else if (youremail.value.match(illegalChars)) {
-//     document.getElementById('email-error').innerHTML = "Email contains invalid characters.";
-//   } else {
-//     youremail.style.background = 'transparent';
-//     document.getElementById('email-error').innerHTML = '';
-//   }
-//   return true;
-// }
-
 
 
 
