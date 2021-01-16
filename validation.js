@@ -20,7 +20,7 @@ window.onload = function () {
 
 function validateEmail(youremail) {
   var temail = trim(email.value); // value of field with whitespace trimmed off
-  var emailFilter = /^[^@]+@[^@.]+\.[^@]*\w\w$/;
+  var emailFilter = /^[^@]+@[^@.]+\.[^@]*\w\w$/gi;
   var illegalChars = /[\(\)\<\>\,\;\:\\\"\[\]]/;
 
   if (youremail.value == "") {
