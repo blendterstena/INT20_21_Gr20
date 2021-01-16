@@ -4,35 +4,42 @@ window.onload = function () {
   const form = document.getElementById('form')
 
   form.addEventListener('submit', (e) => {
-    if (yourname.value === "" || yourname.value === null) {
+    e.preventDefault()
+    if (yourname.value === "") {
       yourname.style.background = '#640d0f';
       document.getElementById('error-message').innerHTML = "Please enter your name!";
+    } else {
+      yourname.style.background = 'transparent';
+      document.getElementById('error-message').innerHTML = "";
     }
-    if (youremail.value === "" || youremail.value === null) {
+
+    if (youremail.value === "") {
       youremail.style.background = '#640d0f'
       document.getElementById('email-error').innerHTML = "Please enter your email!";
     } else if (!validateEmail(youremail)) {
+      youremail.style.background = '#640d0f'
       document.getElementById('email-error').innerHTML = "Your format e-mail is not valid!";
+    } else {
+      youremail.style.background = 'transparent'
+      document.getElementById('email-error').innerHTML = "";
     }
-    e.preventDefault()
   })
+  console.log(validateEmail(youremail), "VALIDIMI")
 }
 
+function trim(s) {
+  return s.replace(/^\s+|\s+$/, "");
+}
 function validateEmail(youremail) {
-  var temail = trim(email.value); // value of field with whitespace trimmed off
-  var emailFilter = /^[^@]+@[^@.]+\.[^@]*\w\w$/;
-  var illegalChars = /[\(\)\<\>\,\;\:\\\"\[\]]/;
-
-  if (youremail.value == "") {
-    youremail.style.background = 'Red';
-    document.getElementById('email-error').innerHTML = "Please enter an email address.";
-  } else if (!emailFilter.test(temail)) { //test email for illegal characters
-    document.getElementById('email-error').innerHTML = "Please enter a valid email address.";
-  } else if (youremail.value.match(illegalChars)) {
-    document.getElementById('email-error').innerHTML = "Email contains invalid characters.";
-  } else {
-    youremail.style.background = 'transparent';
-    document.getElementById('email-error').innerHTML = '';
+  let temail = trim(youremail.value); // e ben heqjen e hapesirave te bardha ne email
+  let emailFilter = /^[^@]+@[^@.]+\.[^@]*\w\w$/;
+  let illegalChars = /[\(\)\<\>\,\;\:\\\"\[\]]/;
+  if (!emailFilter.test(temail) || youremail.value.match(illegalChars)) {
+    return false;
   }
-  return error;
+  return true;
 }
+
+
+
+
